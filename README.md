@@ -61,9 +61,6 @@ INTERNSHIP/
 │   ├── Assignment_05/
 │   ├── Assignment_06/
 │   └── capstone-project/
-├── assets/
-│   └── docs/
-└── notes/
 ```
 
 ## JavaScript Assignments Included
