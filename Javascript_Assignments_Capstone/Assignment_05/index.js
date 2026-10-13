@@ -1,0 +1,33 @@
+// Assignment 5: Function Architecture and Scope
+
+// Standard function with default parameters
+function calculateRectangleArea(length = 5, width = 4) {
+    return length * width;
+}
+
+// Arrow function with parameters
+const calculateArea = (length, width) => length * width;
+
+console.log(
+    `Standard Function Area (Default 5x4): ${calculateRectangleArea()}`
+);
+
+console.log(
+    `Arrow Function Area (Custom 10x3): ${calculateArea(10, 3)}`
+);
+
+// Scope demonstration
+function demonstrateScope() {
+    if (true) {
+        let blockVar = "I exist only inside this block";
+        console.log(`Inside block: ${blockVar}`);
+    }
+
+    try {
+        console.log(blockVar);
+    } catch (error) {
+        console.log(`Scope Test Error: ${error.name}: ${error.message}`);
+    }
+}
+
+demonstrateScope();
